@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dummy Coffee — Cafe modern dengan suasana nyaman dan menu pilihan terbaik."
+    />
+    <title>Dummy Coffee - Company Profil</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- =============================================
+       Navbar — fixed-top, collapses to hamburger
+       on screens < 992px (Bootstrap lg breakpoint)
+       ============================================= -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg fixed-top"
+      aria-label="Navigasi utama Dummy Coffee"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Dummy Coffee</a>
+
+        <!-- Hamburger toggler — hanya muncul di layar < lg (< 992px) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Buka atau tutup menu navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links — di-collapse di mobile, tampil penuh di desktop -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menu.html">Menu & Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/location.html">Lokasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- =============================================
+       About Section — layout dua kolom (gambar + teks)
+       Kolom otomatis menjadi satu tumpukan di layar < lg (< 992px)
+       sesuai perilaku default Bootstrap col-lg-6
+       ============================================= -->
+    <section id="about" class="py-5" aria-label="Tentang Dummy Coffee">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="section-divider mx-auto" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img
+              src="img-dummy/front-coffee-shop.jfif"
+              class="img-fluid about-img"
+              alt="Suasana dalam ruangan Dummy Coffee dengan dekorasi modern dan hangat"
+              onerror="
+                this.src = 'https://placehold.co/600x450?text=Dummy+Coffee'
+              "
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="about-subtitle mb-3">Kisah Dummy Coffee</h3>
+            <p class="about-description mb-4">
+              Dummy Coffee lahir dari kecintaan mendalam terhadap seni meracik
+              kopi dan kerinduan akan ruang yang terasa seperti rumah kedua.
+              Kami menghadirkan biji kopi pilihan dari berbagai daerah
+              Nusantara, diseduh dengan teknik yang tepat oleh barista
+              berpengalaman. Setiap tegukan dirancang untuk memberi Anda jeda
+              sempurna di tengah kesibukan hari.
+            </p>
+            <ul class="about-list list-unstyled">
+              <li class="about-list-item d-flex align-items-start mb-3">
+                <i
+                  class="bi bi-check-circle-fill about-list-icon me-3 flex-shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  ><strong>Biji Kopi Single Origin</strong> — dipilih langsung
+                  dari petani lokal terpercaya di Aceh, Toraja, dan
+                  Flores.</span
+                >
+              </li>
+
+              <li class="about-list-item d-flex align-items-start mb-3">
+                <i
+                  class="bi bi-check-circle-fill about-list-icon me-3 flex-shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  ><strong>Suasana Nyaman &amp; Modern</strong> — desain
+                  interior hangat yang mendukung kerja, belajar, maupun
+                  berkumpul.</span
+                >
+              </li>
+
+              <li class="about-list-item d-flex align-items-start mb-3">
+                <i
+                  class="bi bi-check-circle-fill about-list-icon me-3 flex-shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  ><strong>Barista Bersertifikat</strong> — tim kami terlatih
+                  secara profesional dan siap merekomendasikan pilihan
+                  terbaik.</span
+                >
+              </li>
+
+              <li class="about-list-item d-flex align-items-start mb-3">
+                <i
+                  class="bi bi-check-circle-fill about-list-icon me-3 flex-shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  ><strong>Menu Variatif</strong> — dari espresso klasik hingga
+                  kreasi non-kopi, tersedia pilihan untuk semua selera.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+       Footer — tiga kolom: (1) brand, (2) quick links, (3) sosmed
+       Baris copyright dengan tahun dinamis via JavaScript (Task 11.3)
+       ============================================= -->
+    <footer class="footer-dark" aria-label="Footer Dummy Coffee">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="footer-brand mb-3">Dummy Coffee</h5>
+            <p class="footer-desc">
+              Cafe modern yang menghadirkan cita rasa kopi terbaik dengan
+              suasana yang hangat dan nyaman.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="footer-heading mb-3">Tautan Cepat</h5>
+            <ul class="footer-links list-unstyled">
+              <li><a href="/index.html" class="footer-link">Beranda</a></li>
+              <li>
+                <a href="/about.html" class="footer-link">Tentang Kami</a>
+              </li>
+              <li>
+                <a href="/menu.html" class="footer-link">Menu & Galeri</a>
+              </li>
+              <li><a href="/location.html" class="footer-link">Lokasi</a></li>
+              <li><a href="/contact.html" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="footer-heading mb-3">Ikuti Kami</h5>
+            <div class="footer-social d-flex gap-3">
+              <a
+                href="https://instagram.com"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi Instagram Dummy Coffee"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+
+              <a
+                href="https://facebook.com"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi Facebook Dummy Coffee"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+
+              <a
+                href="https://twitter.com"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi Twitter Dummy Coffee"
+              >
+                <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                <span class="visually-hidden">Twitter / X</span>
+              </a>
+
+              <a
+                href="https://tiktok.com"
+                class="footer-social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kunjungi TikTok Dummy Coffee"
+              >
+                <i class="bi bi-tiktok" aria-hidden="true"></i>
+                <span class="visually-hidden">TikTok</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris copyright: tahun diisi JS via #currentYear (Task 11.3) -->
+      <div class="footer-bottom text-center py-3">
+        <p class="mb-0">
+          &copy; <span id="currentYear"></span> Dummy Coffee. Hak cipta
+          dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- 1. Bootstrap 5.3.8 JS Bundle (CDN jsDelivr) — mencakup Popper.js bawaan -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
